@@ -2,12 +2,15 @@ package fr.unice.polytech.isa.tcf;
 
 // business imports
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
+import fr.unice.polytech.isa.tcf.modules.cart.CartModifier;
+import fr.unice.polytech.isa.tcf.modules.catalogue.entities.Cookies;
+import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.cart.entities.Item;
 
 import java.util.*;
 // component test framework import
+import fr.unice.polytech.isa.tcf.modules.customer.CustomerFinder;
+import fr.unice.polytech.isa.tcf.modules.customer.CustomerRegistration;
 import org.jboss.arquillian.junit.Arquillian;
 // java annotations
 import org.junit.Before;
@@ -21,8 +24,10 @@ import static org.junit.Assert.*;
 public class CartTest extends AbstractTCFTest {
 
 	@EJB(name = "cart-stateless") private CartModifier cart;
-	@EJB CustomerRegistration registry;
-	@EJB CustomerFinder finder;
+	@EJB
+	CustomerRegistration registry;
+	@EJB
+	CustomerFinder finder;
 
 	private Customer john;
 

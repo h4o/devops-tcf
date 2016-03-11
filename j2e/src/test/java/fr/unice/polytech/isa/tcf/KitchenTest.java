@@ -2,7 +2,13 @@ package fr.unice.polytech.isa.tcf;
 
 
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.*;
+import fr.unice.polytech.isa.tcf.modules.cart.entities.Item;
+import fr.unice.polytech.isa.tcf.modules.catalogue.entities.Cookies;
+import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.order.OrderProcessing;
+import fr.unice.polytech.isa.tcf.modules.order.Tracker;
+import fr.unice.polytech.isa.tcf.modules.order.entities.Order;
+import fr.unice.polytech.isa.tcf.modules.order.entities.OrderStatus;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
 import org.junit.Test;

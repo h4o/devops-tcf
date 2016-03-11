@@ -1,8 +1,10 @@
 package fr.unice.polytech.isa.tcf;
 
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.customer.exceptions.AlreadyExistingCustomerException;
+import fr.unice.polytech.isa.tcf.modules.customer.CustomerFinder;
+import fr.unice.polytech.isa.tcf.modules.customer.CustomerRegistration;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
 import org.junit.Test;

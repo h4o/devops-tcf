@@ -2,13 +2,13 @@ package integration;
 
 
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.CustomerFinder;
-import fr.unice.polytech.isa.tcf.CustomerRegistration;
-import fr.unice.polytech.isa.tcf.Payment;
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.entities.Order;
+import fr.unice.polytech.isa.tcf.modules.customer.CustomerFinder;
+import fr.unice.polytech.isa.tcf.modules.customer.CustomerRegistration;
+import fr.unice.polytech.isa.tcf.modules.order.Payment;
+import fr.unice.polytech.isa.tcf.modules.catalogue.entities.Cookies;
+import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.cart.entities.Item;
+import fr.unice.polytech.isa.tcf.modules.order.entities.Order;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
 import org.junit.Test;
