@@ -183,10 +183,28 @@
                 <artifactId>tomee-maven-plugin</artifactId>
                 <version>${versions.tomee.embedded}</version>
                 <configuration>
+
+                    <!-- Avoid errors for duplicated deployment ids -->
+                    <systemVariables>
+                        <openejb.deploymentId.format>{moduleId}/{ejbName}</openejb.deploymentId.format>
+                    </systemVariables>
                     <!-- From TomEE to TomEE+ to support the web services stack -->
                     <tomeeClassifier>plus</tomeeClassifier>
                     <args>-Xmx512m -XX:PermSize=256m</args>
                     <deployOpenEjbApplication>true</deployOpenEjbApplication>
+                   <!-- <libs>
+                        <lib>fr.unice.polytech.isa:business:1.0-SNAPSHOT</lib>
+                        <lib>fr.unice.polytech.isa:customer:1.0-SNAPSHOT</lib>
+                        <lib>fr.unice.polytech.isa:kitchen:1.0-SNAPSHOT</lib>
+                        <lib>fr.unice.polytech.isa:order:1.0-SNAPSHOT</lib>
+                    </libs>-->
+
+                    <webapps>
+                        <webapp>fr.unice.polytech.isa:cartwebservice:1.0-SNAPSHOT</webapp>
+                        <webapp>fr.unice.polytech.isa:customerwebservice:1.0-SNAPSHOT</webapp>
+                    </webapps>
+
+
                 </configuration>
             </plugin>
             <!--<plugin>

@@ -3,7 +3,7 @@ package fr.unice.polytech.isa.tcf.modules.cartwebservice.webservice;
 import fr.unice.polytech.isa.tcf.modules.business.entities.Item;
 import fr.unice.polytech.isa.tcf.modules.business.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.modules.business.exceptions.UnknownCustomerException;
-import fr.unice.polytech.isa.tcf.modules.order.interceptors.ItemVerifier;
+import fr.unice.polytech.isa.tcf.modules.business.interceptors.ItemVerifier;
 
 import javax.interceptor.Interceptors;
 import javax.jws.WebMethod;

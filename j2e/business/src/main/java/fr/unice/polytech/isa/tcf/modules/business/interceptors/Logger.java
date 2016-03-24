@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.modules.order.interceptors;
+package fr.unice.polytech.isa.tcf.modules.business.interceptors;
 
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;

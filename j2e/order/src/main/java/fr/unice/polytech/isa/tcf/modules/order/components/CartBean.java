@@ -4,9 +4,9 @@ package fr.unice.polytech.isa.tcf.modules.order.components;
 import fr.unice.polytech.isa.tcf.modules.business.entities.Customer;
 import fr.unice.polytech.isa.tcf.modules.business.entities.Item;
 import fr.unice.polytech.isa.tcf.modules.business.exceptions.PaymentException;
+import fr.unice.polytech.isa.tcf.modules.business.interceptors.CartCounter;
 import fr.unice.polytech.isa.tcf.modules.order.CartModifier;
 import fr.unice.polytech.isa.tcf.modules.order.Payment;
-import fr.unice.polytech.isa.tcf.modules.order.interceptors.CartCounter;
 
 import javax.ejb.EJB;
 import javax.interceptor.Interceptors;
