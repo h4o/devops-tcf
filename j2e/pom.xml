@@ -36,6 +36,7 @@
                 <versions.tomee>2.0.0-SNAPSHOT</versions.tomee>
             </properties>
         </profile>
+
     </profiles>
 
 
@@ -46,6 +47,14 @@
             <name>Apache Snapshot Repository</name>
             <url>https://repository.apache.org/content/groups/snapshots</url>
         </repository>
+        <repository>
+        <id>snapshots</id>
+        <url>http://erebe-vm4.i3s.unice.fr/artifactory/libs-snapshot</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+
     </repositories>
     <dependencyManagement>
         <dependencies>
@@ -126,7 +135,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>erebe-vm4-snapshots</name>
+            <url>http://erebe-vm4.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
     <modules>
         <module>business</module>
         <module>kitchen</module>

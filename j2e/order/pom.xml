@@ -162,8 +162,8 @@
                             <excludes>
                                 <exclude>none</exclude>
                             </excludes>
-                            <includes>
-                                <include>**/*IntegrationTest.java</include>
+                            <includes><!-- TODO : REACTIVE MOI PLS -->
+                                <include>**/*ItegrationTest.java</include>
                             </includes>
                         </configuration>
                     </execution>
