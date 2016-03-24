@@ -1,7 +1,7 @@
 package fr.unice.polytech.isa.tcf.modules.order.utils;
 
-import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
-import fr.unice.polytech.isa.tcf.modules.order.exceptions.ExternalPartnerException;
+import fr.unice.polytech.isa.tcf.modules.business.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.business.exceptions.ExternalPartnerException;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.json.JSONObject;
 

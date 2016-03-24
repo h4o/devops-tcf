@@ -1,14 +1,14 @@
 package fr.unice.polytech.isa.tcf.modules.order.components;
 
-import fr.unice.polytech.isa.tcf.modules.order.OrderProcessing;
+import fr.unice.polytech.isa.tcf.modules.business.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.business.entities.Item;
+import fr.unice.polytech.isa.tcf.modules.business.entities.Order;
+import fr.unice.polytech.isa.tcf.modules.business.exceptions.ExternalPartnerException;
+import fr.unice.polytech.isa.tcf.modules.business.exceptions.PaymentException;
+import fr.unice.polytech.isa.tcf.modules.business.utils.Database;
+import fr.unice.polytech.isa.tcf.modules.kitchen.OrderProcessing;
 import fr.unice.polytech.isa.tcf.modules.order.Payment;
-import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
-import fr.unice.polytech.isa.tcf.modules.cart.entities.Item;
-import fr.unice.polytech.isa.tcf.modules.order.entities.Order;
-import fr.unice.polytech.isa.tcf.modules.order.exceptions.ExternalPartnerException;
-import fr.unice.polytech.isa.tcf.modules.order.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.modules.order.utils.BankAPI;
-import fr.unice.polytech.isa.tcf.modules.database.Database;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;

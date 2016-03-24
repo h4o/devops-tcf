@@ -1,10 +1,10 @@
 package fr.unice.polytech.isa.tcf.modules.customer.components;
 
+import fr.unice.polytech.isa.tcf.modules.business.exceptions.AlreadyExistingCustomerException;
 import fr.unice.polytech.isa.tcf.modules.customer.CustomerFinder;
 import fr.unice.polytech.isa.tcf.modules.customer.CustomerRegistration;
-import fr.unice.polytech.isa.tcf.modules.customer.entities.Customer;
-import fr.unice.polytech.isa.tcf.modules.customer.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.modules.database.Database;
+import fr.unice.polytech.isa.tcf.modules.business.entities.Customer;
+import fr.unice.polytech.isa.tcf.modules.business.utils.Database;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

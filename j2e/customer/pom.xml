@@ -116,26 +116,17 @@
             <version>${versions.tomee.embedded}</version>
             <scope>test</scope>
         </dependency>
+        <!-- Modules dependencies -->
         <dependency>
-            <groupId>${parent.groupId}</groupId>
-            <artifactId>catalogue</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${parent.groupId}</groupId>
-            <artifactId>database</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>fr.unice.polytech.isa</groupId>
-            <artifactId>order</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>business</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 
 
     <build>
-        <finalName>tcf-backend</finalName>
+        <finalName>customer</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
