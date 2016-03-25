@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="recipes" type="{http://webservice.tcf.isa.polytech.unice.fr/}cookies" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="recipes" type="{http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/}cookies" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

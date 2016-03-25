@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "UnknownOrderId", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/")
+@WebFault(name = "UnknownOrderId", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/")
 public class UnknownOrderId_Exception
     extends Exception
 {

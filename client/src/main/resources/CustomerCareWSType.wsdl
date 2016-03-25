@@ -1,7 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://webservice.tcf.isa.polytech.unice.fr/" name="CustomerCareService" targetNamespace="http://webservice.tcf.isa.polytech.unice.fr/">
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/" name="CustomerCareService" targetNamespace="http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/">
     <wsdl:types>
-        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice.tcf.isa.polytech.unice.fr/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://webservice.tcf.isa.polytech.unice.fr/">
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/">
             <xs:element name="listAllRecipes" type="tns:listAllRecipes"/>
             <xs:element name="listAllRecipesResponse" type="tns:listAllRecipesResponse"/>
             <xs:element name="register" type="tns:register"/>
@@ -65,6 +64,18 @@
             </xs:complexType>
         </xs:schema>
     </wsdl:types>
+    <wsdl:message name="AlreadyExistingCustomerException">
+        <wsdl:part element="ns1:AlreadyExistingCustomerException" name="AlreadyExistingCustomerException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="listAllRecipesResponse">
+        <wsdl:part element="ns1:listAllRecipesResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="registerResponse">
+        <wsdl:part element="ns1:registerResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
     <wsdl:message name="trackResponse">
         <wsdl:part element="ns1:trackResponse" name="parameters">
         </wsdl:part>
@@ -83,18 +94,6 @@
     </wsdl:message>
     <wsdl:message name="register">
         <wsdl:part element="ns1:register" name="parameters">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="AlreadyExistingCustomerException">
-        <wsdl:part element="ns1:AlreadyExistingCustomerException" name="AlreadyExistingCustomerException">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="listAllRecipesResponse">
-        <wsdl:part element="ns1:listAllRecipesResponse" name="parameters">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="registerResponse">
-        <wsdl:part element="ns1:registerResponse" name="parameters">
         </wsdl:part>
     </wsdl:message>
     <wsdl:portType name="CustomerCareService">

@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "CartWebService", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/")
+@WebService(name = "CartWebService", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -26,31 +26,14 @@ public interface CartWebService {
 
     /**
      * 
-     * @param customerName
-     * @return
-     *     returns java.util.List<stubs.cart.Item>
-     * @throws UnknownCustomerException_Exception
-     */
-    @WebMethod
-    @WebResult(name = "cart_contents", targetNamespace = "")
-    @RequestWrapper(localName = "getCustomerCartContents", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.GetCustomerCartContents")
-    @ResponseWrapper(localName = "getCustomerCartContentsResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.GetCustomerCartContentsResponse")
-    public List<Item> getCustomerCartContents(
-        @WebParam(name = "customer_name", targetNamespace = "")
-        String customerName)
-        throws UnknownCustomerException_Exception
-    ;
-
-    /**
-     * 
      * @param item
      * @param customerName
      * @throws UnknownCustomerException_Exception
      */
     @WebMethod
-    @RequestWrapper(localName = "removeItemToCustomerCart", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.RemoveItemToCustomerCart")
-    @ResponseWrapper(localName = "removeItemToCustomerCartResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.RemoveItemToCustomerCartResponse")
-    public void removeItemToCustomerCart(
+    @RequestWrapper(localName = "addItemToCustomerCart", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.AddItemToCustomerCart")
+    @ResponseWrapper(localName = "addItemToCustomerCartResponse", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.AddItemToCustomerCartResponse")
+    public void addItemToCustomerCart(
         @WebParam(name = "customer_name", targetNamespace = "")
         String customerName,
         @WebParam(name = "item", targetNamespace = "")
@@ -65,9 +48,9 @@ public interface CartWebService {
      * @throws UnknownCustomerException_Exception
      */
     @WebMethod
-    @RequestWrapper(localName = "addItemToCustomerCart", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.AddItemToCustomerCart")
-    @ResponseWrapper(localName = "addItemToCustomerCartResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.AddItemToCustomerCartResponse")
-    public void addItemToCustomerCart(
+    @RequestWrapper(localName = "removeItemToCustomerCart", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.RemoveItemToCustomerCart")
+    @ResponseWrapper(localName = "removeItemToCustomerCartResponse", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.RemoveItemToCustomerCartResponse")
+    public void removeItemToCustomerCart(
         @WebParam(name = "customer_name", targetNamespace = "")
         String customerName,
         @WebParam(name = "item", targetNamespace = "")
@@ -80,17 +63,34 @@ public interface CartWebService {
      * @param customerName
      * @return
      *     returns java.lang.String
-     * @throws UnknownCustomerException_Exception
      * @throws PaymentException_Exception
+     * @throws UnknownCustomerException_Exception
      */
     @WebMethod
     @WebResult(name = "order_id", targetNamespace = "")
-    @RequestWrapper(localName = "validate", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.Validate")
-    @ResponseWrapper(localName = "validateResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.cart.ValidateResponse")
+    @RequestWrapper(localName = "validate", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.Validate")
+    @ResponseWrapper(localName = "validateResponse", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.ValidateResponse")
     public String validate(
         @WebParam(name = "customer_name", targetNamespace = "")
         String customerName)
         throws PaymentException_Exception, UnknownCustomerException_Exception
+    ;
+
+    /**
+     * 
+     * @param customerName
+     * @return
+     *     returns java.util.List<stubs.cart.Item>
+     * @throws UnknownCustomerException_Exception
+     */
+    @WebMethod
+    @WebResult(name = "cart_contents", targetNamespace = "")
+    @RequestWrapper(localName = "getCustomerCartContents", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.GetCustomerCartContents")
+    @ResponseWrapper(localName = "getCustomerCartContentsResponse", targetNamespace = "http://webservice.cartwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.cart.GetCustomerCartContentsResponse")
+    public List<Item> getCustomerCartContents(
+        @WebParam(name = "customer_name", targetNamespace = "")
+        String customerName)
+        throws UnknownCustomerException_Exception
     ;
 
 }

@@ -24,14 +24,14 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _TrackResponse_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "trackResponse");
-    private final static QName _UnknownOrderId_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "UnknownOrderId");
-    private final static QName _Track_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "track");
-    private final static QName _ListAllRecipes_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "listAllRecipes");
-    private final static QName _Register_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "register");
-    private final static QName _AlreadyExistingCustomerException_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "AlreadyExistingCustomerException");
-    private final static QName _ListAllRecipesResponse_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "listAllRecipesResponse");
-    private final static QName _RegisterResponse_QNAME = new QName("http://webservice.tcf.isa.polytech.unice.fr/", "registerResponse");
+    private final static QName _AlreadyExistingCustomerException_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "AlreadyExistingCustomerException");
+    private final static QName _ListAllRecipesResponse_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "listAllRecipesResponse");
+    private final static QName _RegisterResponse_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "registerResponse");
+    private final static QName _TrackResponse_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "trackResponse");
+    private final static QName _UnknownOrderId_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "UnknownOrderId");
+    private final static QName _Track_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "track");
+    private final static QName _ListAllRecipes_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "listAllRecipes");
+    private final static QName _Register_QNAME = new QName("http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", "register");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: stubs.customerCare
@@ -105,55 +105,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TrackResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "trackResponse")
-    public JAXBElement<TrackResponse> createTrackResponse(TrackResponse value) {
-        return new JAXBElement<TrackResponse>(_TrackResponse_QNAME, TrackResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UnknownOrderId }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "UnknownOrderId")
-    public JAXBElement<UnknownOrderId> createUnknownOrderId(UnknownOrderId value) {
-        return new JAXBElement<UnknownOrderId>(_UnknownOrderId_QNAME, UnknownOrderId.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Track }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "track")
-    public JAXBElement<Track> createTrack(Track value) {
-        return new JAXBElement<Track>(_Track_QNAME, Track.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ListAllRecipes }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "listAllRecipes")
-    public JAXBElement<ListAllRecipes> createListAllRecipes(ListAllRecipes value) {
-        return new JAXBElement<ListAllRecipes>(_ListAllRecipes_QNAME, ListAllRecipes.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Register }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "register")
-    public JAXBElement<Register> createRegister(Register value) {
-        return new JAXBElement<Register>(_Register_QNAME, Register.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AlreadyExistingCustomerException }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "AlreadyExistingCustomerException")
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "AlreadyExistingCustomerException")
     public JAXBElement<AlreadyExistingCustomerException> createAlreadyExistingCustomerException(AlreadyExistingCustomerException value) {
         return new JAXBElement<AlreadyExistingCustomerException>(_AlreadyExistingCustomerException_QNAME, AlreadyExistingCustomerException.class, null, value);
     }
@@ -162,7 +117,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ListAllRecipesResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "listAllRecipesResponse")
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "listAllRecipesResponse")
     public JAXBElement<ListAllRecipesResponse> createListAllRecipesResponse(ListAllRecipesResponse value) {
         return new JAXBElement<ListAllRecipesResponse>(_ListAllRecipesResponse_QNAME, ListAllRecipesResponse.class, null, value);
     }
@@ -171,9 +126,54 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link RegisterResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservice.tcf.isa.polytech.unice.fr/", name = "registerResponse")
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "registerResponse")
     public JAXBElement<RegisterResponse> createRegisterResponse(RegisterResponse value) {
         return new JAXBElement<RegisterResponse>(_RegisterResponse_QNAME, RegisterResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TrackResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "trackResponse")
+    public JAXBElement<TrackResponse> createTrackResponse(TrackResponse value) {
+        return new JAXBElement<TrackResponse>(_TrackResponse_QNAME, TrackResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UnknownOrderId }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "UnknownOrderId")
+    public JAXBElement<UnknownOrderId> createUnknownOrderId(UnknownOrderId value) {
+        return new JAXBElement<UnknownOrderId>(_UnknownOrderId_QNAME, UnknownOrderId.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Track }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "track")
+    public JAXBElement<Track> createTrack(Track value) {
+        return new JAXBElement<Track>(_Track_QNAME, Track.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListAllRecipes }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "listAllRecipes")
+    public JAXBElement<ListAllRecipes> createListAllRecipes(ListAllRecipes value) {
+        return new JAXBElement<ListAllRecipes>(_ListAllRecipes_QNAME, ListAllRecipes.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Register }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", name = "register")
+    public JAXBElement<Register> createRegister(Register value) {
+        return new JAXBElement<Register>(_Register_QNAME, Register.class, null, value);
     }
 
 }

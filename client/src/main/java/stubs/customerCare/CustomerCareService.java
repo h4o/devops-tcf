@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "CustomerCareService", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/")
+@WebService(name = "CustomerCareService", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -33,8 +33,8 @@ public interface CustomerCareService {
      */
     @WebMethod
     @WebResult(name = "status", targetNamespace = "")
-    @RequestWrapper(localName = "track", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.Track")
-    @ResponseWrapper(localName = "trackResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.TrackResponse")
+    @RequestWrapper(localName = "track", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.Track")
+    @ResponseWrapper(localName = "trackResponse", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.TrackResponse")
     public OrderStatus track(
         @WebParam(name = "order_id", targetNamespace = "")
         String orderId)
@@ -48,8 +48,8 @@ public interface CustomerCareService {
      */
     @WebMethod
     @WebResult(name = "recipes", targetNamespace = "")
-    @RequestWrapper(localName = "listAllRecipes", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.ListAllRecipes")
-    @ResponseWrapper(localName = "listAllRecipesResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.ListAllRecipesResponse")
+    @RequestWrapper(localName = "listAllRecipes", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.ListAllRecipes")
+    @ResponseWrapper(localName = "listAllRecipesResponse", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.ListAllRecipesResponse")
     public List<Cookies> listAllRecipes();
 
     /**
@@ -59,8 +59,8 @@ public interface CustomerCareService {
      * @throws AlreadyExistingCustomerException_Exception
      */
     @WebMethod
-    @RequestWrapper(localName = "register", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.Register")
-    @ResponseWrapper(localName = "registerResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.RegisterResponse")
+    @RequestWrapper(localName = "register", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.Register")
+    @ResponseWrapper(localName = "registerResponse", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.RegisterResponse")
     public void register(
         @WebParam(name = "customer_name", targetNamespace = "")
         String customerName,

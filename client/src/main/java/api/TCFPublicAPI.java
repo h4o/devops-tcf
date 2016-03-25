@@ -22,7 +22,7 @@ public class TCFPublicAPI {
 		URL wsdlLocation = TCFPublicAPI.class.getResource("/CartWS.wsdl");
 		CartWebServiceImplService factory = new CartWebServiceImplService(wsdlLocation);
 		this.carts = factory.getCartWebServiceImplPort();
-		String address = "http://" + host + ":" + port + "/tcf-backend/webservice/CartWS";
+		String address = "http://" + host + ":" + port + "/cartwebservice-1.0-SNAPSHOT/webservices/cartwebservice-1.0-SNAPSHOT/CartWS";
 		((BindingProvider) carts).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
 	}
 
@@ -30,7 +30,7 @@ public class TCFPublicAPI {
 		URL wsdlLocation = TCFPublicAPI.class.getResource("/CustomerCareWS.wsdl");
 		CustomerCareServiceImplService factory = new CustomerCareServiceImplService(wsdlLocation);
 		this.ccs = factory.getCustomerCareServiceImplPort();
-		String address = "http://" + host + ":" + port + "/tcf-backend/webservice/CustomerCareWS";
+		String address = "http://" + host + ":" + port + "/customerwebservice-1.0-SNAPSHOT/webservices/customerwebservice-1.0-SNAPSHOT/CustomerCareWS";
 		((BindingProvider) ccs).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
 	}
 
