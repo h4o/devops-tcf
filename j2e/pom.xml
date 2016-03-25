@@ -147,8 +147,7 @@
         <module>kitchen</module>
         <module>customer</module>
         <module>order</module>
-        <module>cartwebservice</module>
-        <module>customerwebservice</module>
+        <module>webservicesmodule</module>
     </modules>
 
     <build>
@@ -215,8 +214,7 @@
                     </libs>-->
 
                     <webapps>
-                        <webapp>fr.unice.polytech.isa:cartwebservice:1.0-SNAPSHOT</webapp>
-                        <webapp>fr.unice.polytech.isa:customerwebservice:1.0-SNAPSHOT</webapp>
+                        <webapp>fr.unice.polytech.isa:webservicesmodule:1.0-SNAPSHOT</webapp>
                     </webapps>
 
 

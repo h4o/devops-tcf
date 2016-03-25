@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "AlreadyExistingCustomerException", targetNamespace = "http://webservice.customerwebservice.modules.tcf.isa.polytech.unice.fr/")
+@WebFault(name = "AlreadyExistingCustomerException", targetNamespace = "http://webservice.webservicesmodule.modules.tcf.isa.polytech.unice.fr/")
 public class AlreadyExistingCustomerException_Exception
     extends Exception
 {
