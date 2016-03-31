@@ -49,6 +49,8 @@ public class CashierTest extends AbstractTCFTest {
 
 	@Test
 	public void processToPayment() throws Exception {
+		//we make it fail
+		assertTrue(false);
 		// paying order
  		String id = cashier.payOrder(john, items);
 
