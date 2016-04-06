@@ -25,6 +25,7 @@ public class CustomerRegistryBean
 	@Override
 	public void register(String name, String creditCard)
 			throws AlreadyExistingCustomerException {
+		int a  = 0;
 	 	if(findByName(name).isPresent())
 			throw new AlreadyExistingCustomerException(name);
 		memory.getCustomers().put(name, new Customer(name, creditCard));
