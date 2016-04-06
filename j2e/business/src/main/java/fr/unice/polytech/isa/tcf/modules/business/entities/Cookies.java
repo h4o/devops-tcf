@@ -8,7 +8,6 @@ public enum Cookies {
 	private String name;
 	private double price;
 
-	private int i;
 
 	public double getPrice() { return price; }
 	public String getName() { return name; }
