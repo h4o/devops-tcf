@@ -8,9 +8,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>order</artifactId>
+    <artifactId>ITtests</artifactId>
     <packaging>jar</packaging>
-    <name>ISA :: The Cookie Factory :: Order</name>
+    <name>ISA :: The Cookie Factory :: ITtests</name>
 
 
     <properties>
@@ -122,17 +122,34 @@
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>business</artifactId>
             <version>${project.parent.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>customer</artifactId>
             <version>${project.parent.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>kitchen</artifactId>
             <version>${project.parent.version}</version>
+            <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>order</artifactId>
+            <version>${project.parent.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>fr.unice.polytech.isa</groupId>
+            <artifactId>webservicesmodule</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>integration-test</scope>
+            <type>war</type>
+        </dependency>-->
     </dependencies>
 
 
@@ -163,7 +180,7 @@
                                 <exclude>none</exclude>
                             </excludes>
                             <includes>
-                                <include>**/*IntegrationTest.java</include>
+                                <include>**/IT*.java</include>
                             </includes>
                         </configuration>
                     </execution>
