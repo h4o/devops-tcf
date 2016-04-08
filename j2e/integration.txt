@@ -1,0 +1,11 @@
+
+Tests d'intégration :
+
+Tracker integration test :
+track + statut des order
+
+Catalogue integration test :
+CatalogueExploration + commander les recipes en retour (retour à payment)
+
+Cart integration test :
+Customer (création) + Cart (ajouter des items) + payment (demander à mosser si c'est nécessaire)
