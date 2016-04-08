@@ -40,6 +40,7 @@ public class KitchenTest extends AbstractTCFTest {
 
 	@Test
 	public void processCommand() throws Exception {
+		assertFalse(true);
 		Customer pat = new Customer("pat", "1234-567890");
 		Order inProgress = new Order(pat, items);
 		processor.process(inProgress);
