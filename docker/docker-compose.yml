@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  paymentservice:
+    build: ./paymentservice/.
+    volumes:
+      - ./paymentservice:/usr/src/payment
+    ports:
+      - 9090:9090
+
+  webservices:
+    build: ./webservices/.
+    volumes:
+      - ./webservices:/usr/local/tomee/webapps/
+    ports:
+      - 8080:8080
+
